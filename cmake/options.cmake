@@ -12,8 +12,6 @@ cmake_dependent_option(p4est_required "fail if p4est is not found" off "p4est" o
 option(lapack "allow the use the use of lapack/blas" on)
 cmake_dependent_option(lapack_required "fail if lapack/blas is not found" off "lapack" off)
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS on)
-
 # options for libsc, p4est
 set(mpi true)
 
