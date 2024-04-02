@@ -68,7 +68,7 @@ endif()
 
 if(p4est)
 
-  if(ThunderEgg_IS_TOP_LEVEL)
+  if(NOT TARGET P4EST::P4EST)
     if(P4EST_ROOT)
       find_package(P4EST CONFIG REQUIRED NO_DEFAULT_PATH HINTS "${P4EST_ROOT}")
     else()
